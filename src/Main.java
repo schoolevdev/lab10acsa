@@ -66,6 +66,7 @@ class Test
         if(n == 1) {
             return n;
         }
+        //add number with number 1 less
         return n + sum(n - 1);
     }
 
@@ -75,6 +76,7 @@ class Test
         if(n == 1) {
             return n;
         }
+        //multiply number by number 1 less than it
         return n * fact(n - 1);
     }
 
@@ -90,6 +92,7 @@ class Test
         else if(n == 1 || n == 2) {
             return 1;
         }
+        // each number in sequence adds 2 numbers before it
         return fibo(n - 1) + fibo(n - 2);
     }
 
@@ -97,6 +100,7 @@ class Test
     public static int gcf(int n1, int n2)
     {
         if(n1 % n2 == 0) return n2;
+        //euclidean algorithm compressed into recursion
         else return gcf(n2, n1 % n2);
     }
 
@@ -106,6 +110,7 @@ class Test
         if(n2 == 1) {
             return n1;
         }
+        //multiply my itself until n2 == 1
         return n1 * pow(n1, n2 - 1);
     }
 
